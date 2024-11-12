@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+## 🧠 smartbrain
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div>
+  <img src="https://github.com/nady4/ai-face-detect/blob/main/public/assets/1.png" height="350px">
+  <img src="https://github.com/nady4/ai-face-detect/blob/main/public/assets/2.png" height="350px">
+  <img src="https://github.com/nady4/ai-face-detect/blob/main/public/assets/3.png" height="350px">
+  <img src="https://github.com/nady4/ai-face-detect/blob/main/public/assets/4.png" height="350px">
+</div>
 
-Currently, two official plugins are available:
+<br></br>
+## Installation ▶️
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository using `git clone https://github.com/nady4/ai-face-detect.git`.
+2. Enter the project directory using `cd ai-face-detect`.
+3. Install the required packages by running `npm install`.
+4. Run the app with `npm start`.
 
-## Expanding the ESLint configuration
+<br></br>
+## Features 🚀
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- User registration and login through JWT Authentication
+- Image URL submission and face detection through the backend RESTful API
+- Display of the bounding box around the detected face on the image
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+<br></br>
+## Stack 🧰
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 📱 [Frontend](http://github.com/nady4/ai-face-detect)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- HTML5, CSS3, SASS, React.js
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 🖥️ [Backend](http://github.com/nady4/ai-face-detect-api)
+
+- Node.js, Express, pg
+
+### 💾 Database
+
+- PostgreSQL
+
+### 📚 Libraries
+- Clarifai API, JWT
+
+### ☁️ Deploy
+- GitHub Pages
+
+<br></br>
+
+___________
+
+### Frontend code:
+
+- [github.com/nady4/ai-face-detect](http://github.com/nady4/ai-face-detect)
+
+### Backend code:
+
+- [github.com/nady4/ai-face-detect-api](http://github.com/nady4/ai-face-detect-api)
+
+___________
+
+## Contact 👋
+
+### You can see my portfolio at <a href="https://nady4.com/">nady4.com</a> 💼
+
+### Mail me at <a href="mailto:dev@nady4.com/">nadyajerochim@gmail.com</a> ✉️
+
+<br></br>
