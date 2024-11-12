@@ -1,4 +1,4 @@
-## 🧠 smartbrain
+## 🧠 ai-face-detect
 
 <div>
   <img src="https://github.com/nady4/ai-face-detect/blob/main/public/assets/1.png" height="350px">
