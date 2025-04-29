@@ -1,21 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Home from "./components/Home";
-import checkLoginToken from "./hooks/checkLoginToken";
 import "./App.css";
 
 function App() {
-  const [user, setUser] = useState({
-    id: "",
-    username: "",
-    email: "",
-    password: "",
-    loggedIn: false,
+  const [user, setUser] = useState(() => {
+    const storedUser = localStorage.getItem("user");
+    return storedUser
+      ? { ...JSON.parse(storedUser), loggedIn: true }
+      : {
+          id: "",
+          username: "",
+          email: "",
+          password: "",
+          loggedIn: false,
+        };
   });
 
-  checkLoginToken(setUser);
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    const storedToken = localStorage.getItem("token");
+    if (storedUser && storedToken) {
+      setUser({ ...JSON.parse(storedUser), loggedIn: true });
+    }
+  }, []);
 
   return (
     <main className="routes-main">

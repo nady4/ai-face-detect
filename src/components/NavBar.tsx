@@ -1,11 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { UserContextType } from "../../types";
 import Logo from "../assets/brain.png";
 import "../styles/NavBar.scss";
 
 const NavBar = ({ user, setUser }: UserContextType) => {
+  const navigate = useNavigate();
+
   const onSignOut = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("user");
     setUser({
       id: "",
       username: "",
@@ -13,6 +16,7 @@ const NavBar = ({ user, setUser }: UserContextType) => {
       password: "",
       loggedIn: false,
     });
+    navigate("/login");
   };
 
   return (
@@ -24,19 +28,15 @@ const NavBar = ({ user, setUser }: UserContextType) => {
           </Link>
         </div>
         <div className="navbar-username">
-          {user.loggedIn ? (
+          {user.loggedIn && (
             <p className="username-text">👋 user: {user.username}</p>
-          ) : (
-            <></>
           )}
         </div>
         <div className="navbar-sign-out">
-          {user.loggedIn ? (
+          {user.loggedIn && (
             <button onClick={onSignOut} className="sign-out-button">
               Sign Out
             </button>
-          ) : (
-            <></>
           )}
         </div>
       </div>
