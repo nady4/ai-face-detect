@@ -8,7 +8,7 @@
 🧠 AI Face recognition and image description web app built in React.js
 </p>
 
-<div>
+<div align="center">
   <img src="./public/assets/1.png" height="350px">
   <img src="./public/assets/2.png" height="350px">
   <img src="./public/assets/3.png" height="350px">
