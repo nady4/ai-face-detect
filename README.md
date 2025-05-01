@@ -19,9 +19,11 @@
 
 ## 💾 Installation & Setup
 
+### Backend
+
 ```sh
 # 📥 Clone the repository
-git clone https://github.com/nady4/ai-face-detect.git
+git clone https://github.com/nady4/ai-face-detect-api.git
 
 # 📂 Move to the project folder
 cd ai-face-detect-api
@@ -29,7 +31,33 @@ cd ai-face-detect-api
 # 📦 Install dependencies
 npm install
 
+# 🛠️ Create .env file
+cat <<EOF > .env
+DB_URL=postgres://postgres:1369@localhost:5432/ai-face-detect
+PORT=3000
+JWT_SECRET=yoursecret
+EOF
+
+# 🔧 Ensure your database server is running
+npm run prisma:migrate
+
 # 🚀 Run the development server
+npm run dev
+```
+
+### Frontend
+
+```sh
+# 📥 Clone the repository
+git clone https://github.com/nady4/ai-face-detect.git
+
+# 📂 Move to the project folder
+cd ai-face-detect
+
+# 📦 Install dependencies
+npm install
+
+# 🚀 Run the development server (you'll need a backend first)
 npm run dev
 ```
 
