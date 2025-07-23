@@ -10,7 +10,7 @@ export const InputForm = ({
   return (
     <div className="input-form-container">
       <div className="input-form-header">
-        <h1 className="input-form-title">🧠 ai-face-detect🧠</h1>
+        <h1 className="input-form-title">🧠 ai-face-detect 🧠</h1>
         <p className="input-form-description">
           Enter a URL of an image and an AI 🤖
           <br></br> will detect the faces in it

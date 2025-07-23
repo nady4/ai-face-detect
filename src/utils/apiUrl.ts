@@ -1,3 +1,3 @@
-const apiUrl = "http://localhost:3000";
+const apiUrl = "https://ai-face-detect-api.onrender.com";
 
 export default apiUrl;

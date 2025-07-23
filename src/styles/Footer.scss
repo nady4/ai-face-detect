@@ -1,27 +1,14 @@
 .footer {
-  background-color: rgb(25, 25, 25);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding-top: 2vh;
-  margin-bottom: 0%;
+  background-color: rgb(25, 25, 25);
 
-  .footer-copyright,
-  .footer-mail,
-  .footer-dev-bsas,
-  .footer-repo-label,
-  .footer-mail {
+  p {
+    text-align: center;
     margin-top: 2vh;
     color: white;
-  }
-
-  a {
-    .footer-repo-logo {
-      margin-top: 2vh;
-      margin-bottom: 3vh;
-      height: 5vh;
-    }
   }
 }
 
@@ -29,24 +16,14 @@
   .footer {
     flex-direction: row;
 
-    .footer-copyright,
-    .footer-mail,
-    .footer-dev-bsas,
-    .footer-repo-label {
+    p {
+      margin-top: 4vh;
       font-size: 1.5rem;
-      margin-top: 4vh;
     }
 
-    .footer-mail {
-      margin-top: 4vh;
-      margin-bottom: 6vh;
-    }
-
-    a {
-      .footer-repo-logo {
-        margin-top: 2.5vh;
-        height: 6vh;
-      }
+    .name,
+    .mail {
+      width: 30%;
     }
   }
 }
