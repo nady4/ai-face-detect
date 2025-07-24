@@ -5,9 +5,9 @@ export function Footer() {
     <footer className="footer">
       <p className="name">Nadya Jerochim</p>
       <p className="dev-bsas">Full Stack Developer - Buenos Aires, Argentina</p>
-      <p className="mail">nadyajerochim@gmail.com</p>
+      <p className="mail">dev@nady4.com</p>
       <a
-        href="https://www.github.com/emijerochim"
+        href="https://github.com/nady4/ai-face-detect"
         rel="noreferrer"
         target="_blank"
       ></a>
